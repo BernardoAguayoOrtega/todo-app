@@ -9,33 +9,37 @@ import { Container } from './styles';
 import TodoForm from '../TodoForm';
 //import todolist
 import TodoList from '../TodoList';
+//import react router
+import { HashRouter as Router } from 'react-router-dom';
 
 export const App = () => {
 	const [todos, setTodos] = useState([]);
 
 	return (
-		<Container>
-			<GlobalStyle />
-			<Typography component='h1' variant='h2'>
-				Todos
-			</Typography>
-			<TodoForm
-				saveTodo={(todoText) => {
-					const trimmedText = todoText.trim();
+		<Router basename='/'>
+			<Container>
+				<GlobalStyle />
+				<Typography component='h1' variant='h2'>
+					Todos
+				</Typography>
+				<TodoForm
+					saveTodo={(todoText) => {
+						const trimmedText = todoText.trim();
 
-					if (trimmedText.length > 0) {
-						setTodos([...todos, trimmedText]);
-					}
-				}}
-			/>
-			<TodoList 
-				todos={todos} 
-				deleteTodo={(todoIndex) => {
-					const newTodos = todos.filter((_, index) => index !== todoIndex);
-			
-					setTodos(newTodos);
-				}}
+						if (trimmedText.length > 0) {
+							setTodos([...todos, trimmedText]);
+						}
+					}}
 				/>
-		</Container>
+				<TodoList
+					todos={todos}
+					deleteTodo={(todoIndex) => {
+						const newTodos = todos.filter((_, index) => index !== todoIndex);
+
+						setTodos(newTodos);
+					}}
+				/>
+			</Container>
+		</Router>
 	);
 };
