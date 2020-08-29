@@ -1,4 +1,6 @@
+//import react
 import React, { useState } from 'react';
+//import text field from material ui
 import TextField from '@material-ui/core/TextField';
 
 const TodoForm = ({ saveTodo }) => {
