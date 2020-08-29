@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/BernardoAguayoOrtega/todo-appstatic/js/main.e71dbd68.chunk.js",
+    "main.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/main.e71dbd68.chunk.js.map",
+    "runtime-main.js": "/BernardoAguayoOrtega/todo-appstatic/js/runtime-main.e0698763.js",
+    "runtime-main.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/runtime-main.e0698763.js.map",
+    "static/js/2.918c4faa.chunk.js": "/BernardoAguayoOrtega/todo-appstatic/js/2.918c4faa.chunk.js",
+    "static/js/2.918c4faa.chunk.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/2.918c4faa.chunk.js.map",
+    "index.html": "/BernardoAguayoOrtega/todo-appindex.html",
+    "precache-manifest.26f971f318c34e0c777a01ad8f6a8439.js": "/BernardoAguayoOrtega/todo-appprecache-manifest.26f971f318c34e0c777a01ad8f6a8439.js",
+    "service-worker.js": "/BernardoAguayoOrtega/todo-appservice-worker.js",
+    "static/js/2.918c4faa.chunk.js.LICENSE.txt": "/BernardoAguayoOrtega/todo-appstatic/js/2.918c4faa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0698763.js",
+    "static/js/2.918c4faa.chunk.js",
+    "static/js/main.e71dbd68.chunk.js"
+  ]
+}
