@@ -1,5 +1,5 @@
 //import react
-import React from 'react';
+import React, {useState} from 'react';
 //import material 
 import Typography from '@material-ui/core/Typography';
 //import styles
@@ -8,6 +8,8 @@ import GlobalStyle from '../../styles/GlobalStyles'
 import TodoForm  from '../TodoForm'
 
 export const App = () => {
+  const [todos, setTodos] = useState([]);
+
   return (
     <>
       <GlobalStyle/>
