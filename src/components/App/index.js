@@ -3,17 +3,15 @@ import React from 'react';
 //import material 
 import Typography from '@material-ui/core/Typography';
 //import styles
-import './styles.css';
+import GlobalStyle from '../../styles/GlobalStyles'
 
 const App = () => {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle/>
       <Typography component="h1" variant="h2">
         Todos
       </Typography>
-    </div>
+    </>
   );
 };
-
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
