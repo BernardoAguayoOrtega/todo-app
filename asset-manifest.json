@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/BernardoAguayoOrtega/todo-appstatic/js/main.fa04a160.chunk.js",
-    "main.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/main.fa04a160.chunk.js.map",
+    "main.js": "/BernardoAguayoOrtega/todo-appstatic/js/main.51b1fa46.chunk.js",
+    "main.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/main.51b1fa46.chunk.js.map",
     "runtime-main.js": "/BernardoAguayoOrtega/todo-appstatic/js/runtime-main.e0698763.js",
     "runtime-main.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/runtime-main.e0698763.js.map",
-    "static/js/2.6555175a.chunk.js": "/BernardoAguayoOrtega/todo-appstatic/js/2.6555175a.chunk.js",
-    "static/js/2.6555175a.chunk.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/2.6555175a.chunk.js.map",
+    "static/js/2.7ba1be9d.chunk.js": "/BernardoAguayoOrtega/todo-appstatic/js/2.7ba1be9d.chunk.js",
+    "static/js/2.7ba1be9d.chunk.js.map": "/BernardoAguayoOrtega/todo-appstatic/js/2.7ba1be9d.chunk.js.map",
     "index.html": "/BernardoAguayoOrtega/todo-appindex.html",
-    "precache-manifest.a9ed0f23b0e997b0b43efe29368c94af.js": "/BernardoAguayoOrtega/todo-appprecache-manifest.a9ed0f23b0e997b0b43efe29368c94af.js",
+    "precache-manifest.c04b5d95a12198c8d696349b1dcb8912.js": "/BernardoAguayoOrtega/todo-appprecache-manifest.c04b5d95a12198c8d696349b1dcb8912.js",
     "service-worker.js": "/BernardoAguayoOrtega/todo-appservice-worker.js",
-    "static/js/2.6555175a.chunk.js.LICENSE.txt": "/BernardoAguayoOrtega/todo-appstatic/js/2.6555175a.chunk.js.LICENSE.txt"
+    "static/js/2.7ba1be9d.chunk.js.LICENSE.txt": "/BernardoAguayoOrtega/todo-appstatic/js/2.7ba1be9d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0698763.js",
-    "static/js/2.6555175a.chunk.js",
-    "static/js/main.fa04a160.chunk.js"
+    "static/js/2.7ba1be9d.chunk.js",
+    "static/js/main.51b1fa46.chunk.js"
   ]
 }
