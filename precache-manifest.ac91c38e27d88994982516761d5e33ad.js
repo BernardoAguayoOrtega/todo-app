@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c317f5a9cda9b49676d589d447e75cd3",
+    "revision": "f55e99af60e1d27aa00a347725780165",
     "url": "/BernardoAguayoOrtega/todo-appindex.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BernardoAguayoOrtega/todo-appstatic/js/2.7ba1be9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9af548f902e5016cd283",
-    "url": "/BernardoAguayoOrtega/todo-appstatic/js/main.51b1fa46.chunk.js"
+    "revision": "85cfe78869cd24bfca56",
+    "url": "/BernardoAguayoOrtega/todo-appstatic/js/main.cfa422ad.chunk.js"
   },
   {
     "revision": "561af798b714fd0a89ce",
