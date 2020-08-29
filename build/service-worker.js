@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/BernardoAguayoOrtega/todo-appprecache-manifest.a9ed0f23b0e997b0b43efe29368c94af.js"
+  "/BernardoAguayoOrtega/todo-appprecache-manifest.c04b5d95a12198c8d696349b1dcb8912.js"
 );
 
 self.addEventListener('message', (event) => {
