@@ -1,6 +1,12 @@
 #
 node_modules
 
+#dist
+dist
+
+#cache
+.cache
+
 # Logs
 logs
 *.log
