@@ -14,7 +14,7 @@ import { Context } from '../../utils/Context';
 
 export const App = () => {
 	//use context hook
-	const {addTodo, todos} = React.useContext(Context)
+	const { addTodo } = React.useContext(Context);
 
 	return (
 		<Container>
@@ -25,20 +25,12 @@ export const App = () => {
 			<TodoForm
 				saveTodo={(todoText) => {
 					const trimmedText = todoText.trim();
-
 					if (trimmedText.length > 0) {
-						addTodo(todoText)
+						addTodo(todoText);
 					}
 				}}
 			/>
-			<TodoList
-				todos={todos}
-				deleteTodo={(todoIndex) => {
-					const newTodos = todos.filter((_, index) => index !== todoIndex);
-
-					setTodos(newTodos);
-				}}
-			/>
+			<TodoList />
 		</Container>
 	);
 };

@@ -18,7 +18,9 @@ const ContextProvider = ({ children }) => {
 	//function that read the todos
 	const readTodos = () => {
 		db.collection('todos').onSnapshot((Snapshot) =>
-			setTodos(Snapshot.docs.map((doc) => doc.data().info)),
+			setTodos(
+				Snapshot.docs.map((doc) => ({ id: doc.id, info: doc.data().info })),
+			),
 		);
 	};
 
@@ -27,7 +29,9 @@ const ContextProvider = ({ children }) => {
 		db.collection('todos').add({ info: value });
 	};
 
-	return <Context.Provider value={{ addTodo, todos }}>{children}</Context.Provider>;
+	return (
+		<Context.Provider value={{ addTodo, todos }}>{children}</Context.Provider>
+	);
 };
 
 export { ContextProvider, Context };
