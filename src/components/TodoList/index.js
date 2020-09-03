@@ -13,7 +13,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 const TodoList = () => {
 	//react use Context hook
-	const { todos } = React.useContext(Context);
+	const { todos, deleteTodo } = React.useContext(Context);
 
 	return (
 		<List>
@@ -22,13 +22,13 @@ const TodoList = () => {
 					<Checkbox tabIndex={-1} disableRipple />
 					<ListItemText primary={todo.info} />
 					<ListItemSecondaryAction>
-						{/*<IconButton
+						<IconButton
 							aria-label='Delete'
 							onClick={() => {
-								deleteTodo(index);
+								deleteTodo(todo.id);
 							}}>
 							<DeleteIcon />
-						</IconButton>*/}
+						</IconButton>
 					</ListItemSecondaryAction>
 				</ListItem>
 			))}

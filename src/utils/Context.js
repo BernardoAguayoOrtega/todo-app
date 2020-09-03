@@ -29,8 +29,13 @@ const ContextProvider = ({ children }) => {
 		db.collection('todos').add({ info: value });
 	};
 
+	//function to delete item
+	const deleteTodo = (id) => {
+		db.collection('todos').doc(id).delete()
+	}
+
 	return (
-		<Context.Provider value={{ addTodo, todos }}>{children}</Context.Provider>
+		<Context.Provider value={{ addTodo, todos, deleteTodo }}>{children}</Context.Provider>
 	);
 };
 
