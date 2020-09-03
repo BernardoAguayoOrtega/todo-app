@@ -14,12 +14,11 @@ const ContextProvider = ({ children }) => {
 	React.useEffect(() => {
 		readTodos();
 	}, []);
-	console.log(todos);
 
 	//function that read the todos
 	const readTodos = () => {
 		db.collection('todos').onSnapshot((Snapshot) =>
-			setTodos(Snapshot.docs.map((doc) => doc.data())),
+			setTodos(Snapshot.docs.map((doc) => doc.data().info)),
 		);
 	};
 
@@ -28,7 +27,7 @@ const ContextProvider = ({ children }) => {
 		db.collection('todos').add({ info: value });
 	};
 
-	return <Context.Provider value={{ addTodo }}>{children}</Context.Provider>;
+	return <Context.Provider value={{ addTodo, todos }}>{children}</Context.Provider>;
 };
 
 export { ContextProvider, Context };

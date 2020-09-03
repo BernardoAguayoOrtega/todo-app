@@ -13,9 +13,8 @@ import TodoList from '../TodoList';
 import { Context } from '../../utils/Context';
 
 export const App = () => {
-	const [todos, setTodos] = useState([]);
-
-	const {addTodo} = React.useContext(Context)
+	//use context hook
+	const {addTodo, todos} = React.useContext(Context)
 
 	return (
 		<Container>
@@ -29,7 +28,6 @@ export const App = () => {
 
 					if (trimmedText.length > 0) {
 						addTodo(todoText)
-						setTodos([...todos, trimmedText]);
 					}
 				}}
 			/>
