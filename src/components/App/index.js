@@ -5,10 +5,12 @@ import Typography from '@material-ui/core/Typography';
 //import styles
 import GlobalStyle from '../../styles/GlobalStyles';
 import { Container } from './styles';
-//import form
+//import formS
 import TodoForm from '../TodoForm';
 //import todolist
 import TodoList from '../TodoList';
+//import the context
+import { Context } from '../../utils/Context';
 
 export const App = () => {
 	const [todos, setTodos] = useState([]);

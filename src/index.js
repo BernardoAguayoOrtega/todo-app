@@ -6,12 +6,16 @@ import ReactDom from 'react-dom';
 import { App } from './components/App';
 //import react router
 import { HashRouter as Router } from 'react-router-dom';
+//import context
+import { ContextProvider } from './utils/Context';
 
 const rootElement = document.getElementById('root');
 
 ReactDom.render(
-	<Router basename='/'>
-		<App />
-	</Router>,
+	<ContextProvider>
+		<Router basename='/'>
+			<App />
+		</Router>
+	</ContextProvider>,
 	rootElement,
 );
