@@ -14,4 +14,6 @@ firebase.initializeApp({
 	appId: '1:523142341168:web:fe6ee0e2ae7b827073c3f5',
 });
 
+export const getTime = firebase.firestore.FieldValue.serverTimestamp;
+
 export const db = firebase.firestore();

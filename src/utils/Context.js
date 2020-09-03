@@ -1,7 +1,7 @@
 //import react
 import React from 'react';
 //import the db
-import { db } from './firebase';
+import { db, getTime } from './firebase';
 //create context
 const Context = React.createContext();
 
@@ -17,25 +17,29 @@ const ContextProvider = ({ children }) => {
 
 	//function that read the todos
 	const readTodos = () => {
-		db.collection('todos').onSnapshot((Snapshot) =>
-			setTodos(
-				Snapshot.docs.map((doc) => ({ id: doc.id, info: doc.data().info })),
-			),
-		);
+		db.collection('todos')
+			.orderBy('timestamp', 'desc')
+			.onSnapshot((Snapshot) =>
+				setTodos(
+					Snapshot.docs.map((doc) => ({ id: doc.id, info: doc.data().info })),
+				),
+			);
 	};
 
 	//function that add a todo item to data base
 	const addTodo = (value) => {
-		db.collection('todos').add({ info: value });
+		db.collection('todos').add({ info: value, timestamp: getTime() });
 	};
 
 	//function to delete item
 	const deleteTodo = (id) => {
-		db.collection('todos').doc(id).delete()
-	}
+		db.collection('todos').doc(id).delete();
+	};
 
 	return (
-		<Context.Provider value={{ addTodo, todos, deleteTodo }}>{children}</Context.Provider>
+		<Context.Provider value={{ addTodo, todos, deleteTodo }}>
+			{children}
+		</Context.Provider>
 	);
 };
 

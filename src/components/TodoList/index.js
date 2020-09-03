@@ -23,11 +23,12 @@ const TodoList = () => {
 					<ListItemText primary={todo.info} />
 					<ListItemSecondaryAction>
 						<IconButton
+							style={{paddingLeft:'1rem'}}
 							aria-label='Delete'
 							onClick={() => {
 								deleteTodo(todo.id);
 							}}>
-							<DeleteIcon />
+							<DeleteIcon/>
 						</IconButton>
 					</ListItemSecondaryAction>
 				</ListItem>
