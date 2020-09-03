@@ -15,6 +15,10 @@ import { Context } from '../../utils/Context';
 export const App = () => {
 	const [todos, setTodos] = useState([]);
 
+	const {addTodo} = React.useContext(Context)
+
+	addTodo('this is a text')
+
 	return (
 		<Container>
 			<GlobalStyle />
