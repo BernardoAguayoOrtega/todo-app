@@ -17,8 +17,6 @@ export const App = () => {
 
 	const {addTodo} = React.useContext(Context)
 
-	addTodo('this is a text')
-
 	return (
 		<Container>
 			<GlobalStyle />
@@ -30,6 +28,7 @@ export const App = () => {
 					const trimmedText = todoText.trim();
 
 					if (trimmedText.length > 0) {
+						addTodo(todoText)
 						setTodos([...todos, trimmedText]);
 					}
 				}}
