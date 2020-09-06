@@ -1,5 +1,5 @@
 # todo app
-Simple todo app
+Simple todo app with firebase connection
 
 ## How te see it?
 
