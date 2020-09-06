@@ -5,13 +5,13 @@ import 'firebase/firestore';
 
 // Initialize Firebase
 firebase.initializeApp({
-	apiKey: 'AIzaSyAQbz2Kmrstvd2XMxGLaL6FUd3NuNGlcCs',
-	authDomain: 'test-3bd1f.firebaseapp.com',
-	databaseURL: 'https://test-3bd1f.firebaseio.com',
-	projectId: 'test-3bd1f',
-	storageBucket: 'test-3bd1f.appspot.com',
-	messagingSenderId: '523142341168',
-	appId: '1:523142341168:web:fe6ee0e2ae7b827073c3f5',
+	apiKey: "AIzaSyDsh4J0yDUF2KkPPArGjRhTkOK_3BCt3OY",
+	authDomain: "todo-app-ccfa8.firebaseapp.com",
+	databaseURL: "https://todo-app-ccfa8.firebaseio.com",
+	projectId: "todo-app-ccfa8",
+	storageBucket: "todo-app-ccfa8.appspot.com",
+	messagingSenderId: "49304441043",
+	appId: "1:49304441043:web:5c8b5509195e5f31d4c426"
 });
 
 export const getTime = firebase.firestore.FieldValue.serverTimestamp;
