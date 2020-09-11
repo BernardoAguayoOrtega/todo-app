@@ -3,7 +3,7 @@ Simple todo app with firebase connection
 
 ## How te see it?
 
-Go to [netflix-clone](https://bernardoaguayoortega.github.io/todo-app/) to see it.
+Go to [todo-app](https://bernardoaguayoortega.github.io/todo-app/) to see it.
 
 ## technologies used
 
